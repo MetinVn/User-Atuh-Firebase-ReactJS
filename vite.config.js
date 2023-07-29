@@ -4,5 +4,5 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base:'/User-Authentication-Firebase-ReactJS/'
+  base:'/User-Atuh-Firebase-ReactJS/'
 })
