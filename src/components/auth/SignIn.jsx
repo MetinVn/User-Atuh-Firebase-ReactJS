@@ -37,8 +37,7 @@ const SignIn = () => {
 
   return (
     <div className="text-center w-full min-w-[280px]">
-      <div className="relative top-0 w-full p-5 items-center bg-gray-600 flex justify-between">
-        <h1 className="text-white">User Authentication with Firebase</h1>
+      <div className="relative top-0 w-full p-5 items-center bg-gray-600 flex justify-center">
         <div className="flex flex-col justify-center items-center sm:flex-row gap-2 sm:gap-0">
           <button
             onClick={() => setLogged(true)}
@@ -57,7 +56,7 @@ const SignIn = () => {
       {logged ? (
         <form
           onSubmit={signIn}
-          className="mx-auto max-w-[1000px] flex flex-col items-center gap-2 py-10"
+          className="mx-auto max-w-[600px] flex flex-col items-center my-10 gap-2 py-10 border-2 bg-gray-800 rounded-lg shadow-lg shadow-blue-800 hover:scale-[101%] duration-300"
         >
           <h1 className="py-4 text-purple-800">Log in</h1>
           <input
@@ -81,7 +80,7 @@ const SignIn = () => {
           </button>
         </form>
       ) : (
-        <div className="text-center w-full min-w-[280px]">
+        <div className="mx-auto max-w-[600px] flex flex-col items-center my-10 gap-2 py-10 border-2 bg-gray-800 rounded-lg shadow-lg shadow-blue-800 hover:scale-[101%] duration-300">
           <form
             onSubmit={signUp}
             className="mx-auto max-w-[1000px] flex flex-col items-center gap-2 py-10"
